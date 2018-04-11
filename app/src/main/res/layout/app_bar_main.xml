@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.joybien.gardCharge.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/holo_orange_dark"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <TextView
+                android:id="@+id/textViewBar0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewBar0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp" />
+
+            <Button
+                android:id="@+id/editBTN"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
+                android:layout_alignBaseline="@+id/chargeBTN"
+                android:layout_alignBottom="@+id/chargeBTN"
+                android:layout_toStartOf="@+id/chargeBTN"
+                android:background="@drawable/edit_x120"
+                android:paddingBottom="15dp"
+                android:paddingStart="5dp" />
+
+            <Button
+                android:id="@+id/chargeBTN"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/maTV"
+                android:background="@drawable/gc_charge57"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/maTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_toStartOf="@+id/imageViewBar0"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+    -->
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/glass_mask_500x330"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.72"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meterCurrent"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/meterCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Amp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="54sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meterEnergy"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/meterEnergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Energy"
+                android:textColor="#00FF00"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/meterTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Timer"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meterVolt"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/meterVolt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Volt"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="54sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meterCapacity"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/meterCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Capacity"
+                android:textColor="#00FF00"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/meterDynamic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Dynamic"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

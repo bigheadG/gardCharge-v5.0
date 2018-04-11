@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Gard Charge</string>
+    <string name="app_name_v">Gard Charge v5.0</string>
+    <string name="scan_name">Choose Device to Connect</string>
+    <string name="setting_name">Gard Charge Setting</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_nick">Nick Name</string>
+    <string name="string_ok">OK</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="scenes">Scenes</string>
+    <string name="address">Address</string>
+    <string name="group">Group</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_connection">No device connected</string>
+    <string name="reconnect">Please reconnect the device</string>
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_setup_information">Setup/Information</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_record">Record Mode</string>
+
+    <string name="command">Command</string>
+    <string name="control">Direct Control</string>
+    <string name="selectName">Please Select Item</string>
+
+    <string name="home">Home</string>
+    <string name="scan">Scan/Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+
+    <!-- Main -->
+
+    <string name="btnMeter">Meter</string>
+    <string name="btnTimer">Timer</string>
+    <string name="btnGraph">Graph</string>
+
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="factory_setting_title">Factory Setting</string>
+    <string name="factory_setting_msg">Select "OK" is Factory Setting</string>
+    <string name="setting_title">Setting Successfully !</string>
+    <string name="setting_msg">Please reconnect the device</string>
+    <string name="echo_led_on">Gard Charge Power ON</string>
+    <string name="echo_led_off">Gard Charge Power OFF</string>
+    <string name="echo_timer_on">Timer Status Enable</string>
+    <string name="echo_timer_off">Timer Status Disable</string>
+    <string name="connect_success">Device Connected</string>
+    <string name="echo_trip_current">Trip Current:</string>
+
+    <string name="meterCurrent">Current:(A)</string>
+    <string name="meterVolt">Voltage:(V)</string>
+    <string name="meterEnergy">Energy:(W)</string>
+    <string name="meterCapacity">Capacity(mAH)</string>
+
+    <string name="Amp">Amp</string>
+    <string name="Volt">Volt</string>
+    <string name="Energy">Watt</string>
+    <string name="Capacity">mAH</string>
+    <string name="Timer">Timer:</string>
+    <string name="Dynamic">Dynamic Ω</string>
+
+    <string name="proTc"></string>
+    <string name="proTci"></string>
+
+    <string name="graphCurrent">Current(A)</string>
+    <string name="graphVoltage">Voltage(V)</string>
+    <string name="graphEnergy">Energy(W)</string>
+    <string name="graphCap">Cap.(AH)</string>
+
+    <!-- Setting -->
+
+    <string name="mins">mins</string>
+    <string name="min0">0min</string>
+    <string name="mins60">60mins</string>
+    <string name="Timer_setting">Count Down Timer(HH:MM)</string>
+    <string name="High_setting">Over Current Setting(Max:4A)</string>
+    <string name="Low_setting">Low Current Limit</string>
+    <string name="Low_OffTime_setting">Low Current Time Offset</string>
+    <string name="submit">Submit</string>
+    <string name="successfully">Successfully !</string>
+
+    <string name="hw1">Over Current !!!</string>
+    <string name="lw1_1">Charging current is</string>
+    <string name="lw1_2">will turn off after</string>
+    <string name="lw1_3">mins.</string>
+    <string name="lw2">Charging process completed</string>
+    <string name="lw3">Charging Stopped</string>
+    <string name="lw4">Power not delivered</string>
+    <string name="elapsed">Elapsed:</string>
+
+</resources>

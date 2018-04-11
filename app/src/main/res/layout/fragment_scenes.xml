@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joybien.gardCharge.ScenesFragment">
+
+    <!-- TODO: Update blank fragment layout
+    <Button
+        android:layout_width="108dp"
+        android:layout_height="66dp"
+        android:text="Scenes"
+        android:layout_gravity="center_vertical|center_horizontal" />
+    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/sgb0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edit_stop_32"
+            android:visibility="invisible"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg0"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+             >
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:gravity="center_vertical|center"
+                android:text="@string/scenes"
+                android:background="@drawable/shape_black"
+                android:textSize="12dp"
+                android:textColor="#ecfb20"
+                android:layout_marginLeft="2dp"
+                android:buttonTint="#ecfb20" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:background="@drawable/shape_black"
+                android:textSize="12dp"
+                android:textColor="#ecfb20"
+                android:layout_marginLeft="2dp"
+                android:buttonTint="#ecfb20" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/group"
+                android:background="@drawable/shape_black"
+                android:textSize="12dp"
+                android:textColor="#ecfb20"
+                android:layout_marginLeft="2dp"
+                android:buttonTint="#ecfb20" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg0"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="ADDRESS:"
+            android:textColor="@android:color/background_light"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg0"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="GROUP:"
+            android:textColor="@android:color/background_light"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_below="@+id/textViewG"
+            android:layout_marginTop="5dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+              />
+
+        <NumberPicker
+            android:id="@+id/numberPicker2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_below="@+id/textViewG"
+            android:layout_marginTop="5dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            />
+
+
+<!--
+        <GridView
+            android:id="@+id/fsGGridView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewG"
+            android:layout_marginTop="5dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:paddingBottom="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <GridView
+            android:id="@+id/fsAGridView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewG"
+            android:layout_marginTop="5dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:paddingBottom="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+-->
+        <GridView
+            android:id="@+id/fsSGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/numberPicker2"
+            android:layout_marginTop="10dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:paddingBottom="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <Button
+            android:id="@+id/buttonFilter1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sgb0"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/filter150_x"
+            android:gravity="end"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</FrameLayout>

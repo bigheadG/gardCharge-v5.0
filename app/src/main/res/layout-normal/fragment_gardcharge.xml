@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_pressed"
+    android:id="@+id/gardchargeid"
+    android:tag = "gardchargetag"
+    android:orientation="vertical"
+    tools:context="com.joybien.gardCharge.GardChargeFragment"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gardsave162"
+            android:text=""
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:id="@+id/imageChain"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="left"
+                app:srcCompat="@drawable/gc_chain_bkx57" />
+
+            <ImageView
+                android:id="@+id/imageTimer"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:tag="off"
+                app:srcCompat="@drawable/gc_timer_64x" />
+
+            <ImageView
+                android:id="@+id/imageOn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/gc_off_64" />
+
+            <ImageView
+                android:id="@+id/imageSpeed"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="left"
+                app:srcCompat="@drawable/gc_slow57" />
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="32dp"
+                android:layout_height="26dp"
+                android:background="@drawable/redbutton"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/lowButton"
+                android:layout_width="32dp"
+                android:layout_height="26dp"
+                android:background="@drawable/greenbutton"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <include
+            android:id="@+id/includeGraph"
+            layout="@layout/fragment_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/includeTimer"
+            layout="@layout/timer_gardcharge"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/includeMeter"
+            layout="@layout/fragment_meter"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:visibility="invisible" />
+
+        
+
+    </RelativeLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/btnMeterMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@drawable/radio"
+                android:button="@null"
+
+                android:text="@string/btnMeter"
+                android:textAlignment="center"
+                android:textColor="#FF8800"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btnTimerMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@drawable/radio"
+                android:button="@null"
+
+                android:checked="true"
+                android:text="@string/btnTimer"
+                android:textAlignment="center"
+                android:textColor="#FF8800"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btnGraphMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@drawable/radio"
+                android:button="@null"
+
+                android:text="@string/btnGraph"
+                android:textAlignment="center"
+                android:textColor="#FF8800"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+
+
+        <ImageButton
+            android:id="@+id/btnPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.15"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnOFF"
+            app:layout_constraintRight_toLeftOf="@+id/btnON"
+            app:srcCompat="@drawable/menu_off" />
+
+        <ImageButton
+            android:id="@+id/btnTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="103dp"
+            android:layout_marginLeft="90dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/timer" />
+
+        <ImageButton
+            android:id="@+id/btnRESET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="103dp"
+            android:layout_marginRight="90dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/reset" />
+
+        <Button
+            android:id="@+id/btnON"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/on"
+            android:text="@string/on"
+            android:textColor="@android:color/holo_green_dark"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/on" />
+
+        <Button
+            android:id="@+id/btnOFF"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/off"
+            android:text="@string/off"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/off" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
